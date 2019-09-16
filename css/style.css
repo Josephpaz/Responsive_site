@@ -1,0 +1,159 @@
+body{
+    margin: 0px;
+}
+
+.header_main{
+    background-color: #7159C1;
+}
+
+
+#header_sub {
+    margin-left: 1.5em;
+    float: left;
+}
+
+.flex-row{
+    flex-direction: row;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+}
+
+.item{
+    flex: 1;
+    margin: 15px;
+}
+
+
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+li, a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    float: right;
+    color: rgb(180, 180, 180);
+    text-decoration: none;
+    display: block;
+    padding: 10px 12px;
+}
+
+li a:hover {
+    background-color: rgb(61, 44, 117);
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+#menu_burguer{
+    margin-top: 16px;
+    width: 30px;
+    padding: 2px;
+    float: right;
+    display:none;
+    z-index: auto;
+}
+
+.title1{
+    font-family: 'Lustria', serif;
+    font-size: 28px;
+}
+
+.text_title1{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+.item, .text1, .text_title1{
+    justify-items: auto;
+    text-align: center;
+}
+
+.title{
+    font-family: 'Lustria', serif;
+    font-size: 28px;
+}
+.text_title{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+.section2{
+    background-color: #F1EFFF;
+}
+
+.section3{
+    background-color: #7159C1;
+}
+
+.section4{
+    background-color: slategrey;
+}
+.section{
+    background-color: silver;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section1{
+    flex-direction: column;
+    align-items: center;
+}
+
+.init_title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#footer{
+    margin: 0px;
+    padding: 12px;
+    background-color: darkgray;
+    font-family: 'Lustria';
+  }
+.footer{
+    background-color: darkgrey;
+    text-align: center;
+}
+
+@media only screen and (max-width: 820px) {
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .flex-row{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .title, .text_title{
+        text-align: center;
+        justify-items: auto;
+    }
+  }
+
+
+@media only screen and (max-width: 610px){
+    .header_main{
+        background-color: white;
+    }
+    
+    #header_sub{
+        margin-left: 0px;
+        float: inherit;
+        text-align: center;
+
+    }
+
+    #nav_bar{
+        display: none;
+    }
+
+    #menu_burguer{
+        display: none;
+    }
+
+    
+}
