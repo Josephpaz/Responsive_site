@@ -3,14 +3,9 @@ body{
 }
 
 .header_main{
-    background-color: #7159C1;
+    background-color: white;
 }
 
-
-#header_sub {
-    margin-left: 1.5em;
-    float: left;
-}
 
 .flex-row{
     flex-direction: row;
@@ -58,12 +53,12 @@ li a:hover {
     z-index: auto;
 }
 
-.title1{
-    font-family: 'Lustria', serif;
+.title, .title1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 28px;
 }
 
-.text_title1{
+.text_title, .text_title1{
     font-family: 'Lato', sans-serif;
     font-size: 20px;
 }
@@ -73,28 +68,15 @@ li a:hover {
     text-align: center;
 }
 
-.title{
-    font-family: 'Lustria', serif;
-    font-size: 28px;
-}
-.text_title{
-    font-family: 'Lato', sans-serif;
-    font-size: 20px;
-}
-
 .section2{
     background-color: #F1EFFF;
 }
 
-.section3{
-    background-color: #7159C1;
-}
-
 .section4{
-    background-color: slategrey;
+    background-color: #f2f4f6;
 }
 .section{
-    background-color: silver;
+    background-color: #f2f4f6;
     flex-direction: column;
     align-items: center;
 }
@@ -105,6 +87,9 @@ li a:hover {
 }
 
 .init_title{
+    margin-left: 10px;
+    margin-top: 14.5px;
+    float: left;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -112,7 +97,7 @@ li a:hover {
     margin: 0px;
     padding: 12px;
     background-color: darkgray;
-    font-family: 'Lustria';
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 .footer{
     background-color: darkgrey;
@@ -136,16 +121,14 @@ li a:hover {
 
 
 @media only screen and (max-width: 610px){
+    .init_title{
+        float: none;
+        text-align: center;
+    }
+
     .header_main{
         background-color: white;
-    }
-    
-    #header_sub{
-        margin-left: 0px;
-        float: inherit;
-        text-align: center;
-
-    }
+    }    
 
     #nav_bar{
         display: none;
@@ -154,6 +137,8 @@ li a:hover {
     #menu_burguer{
         display: none;
     }
-
+    .section3{
+        flex-direction: column;
+    }
     
 }
